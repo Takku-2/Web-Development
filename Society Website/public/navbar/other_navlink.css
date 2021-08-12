@@ -1,0 +1,54 @@
+ul {
+  list-style:none;
+  font-family:'Trebuchet MS';
+  font-size:17px;
+  text-align:center;
+  margin-top:20px;
+}
+
+li {
+  position:relative;
+  display:inline;
+}
+
+li a {
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:10px;
+  padding-left: 87px;
+  padding-right: 87px;
+}
+
+.sclass{
+  display:block;
+  width:calc(100% - 23px);
+  height:4px;
+  background:#0088CC;
+  position:absolute;
+  left:10px;
+  bottom:-10px;
+}
+
+li a:hover {
+ 	color:#0088CC;
+}
+
+li a:hover ~ span {
+ 	 animation:ul 1s ease-out;
+   background:#333;
+}
+
+@keyframes ul {
+ 	0% {
+    width:0;
+  }
+  100% {
+    width:calc(100% - 23px);
+  }
+}
